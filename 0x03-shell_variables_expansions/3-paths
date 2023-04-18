@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | tr 'i' '\n' | wc -1
+echo $(('echo $PATH | grep -0 "i/" | wc -l'+ 1))
